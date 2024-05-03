@@ -1,7 +1,7 @@
 import { unstable_cache } from "next/cache";
 import prisma from "./db";
 import { cache } from "react";
-import { wait } from "@/utils/seed";
+import { wait } from "@/utils/helper";
 
 export const getTodos = unstable_cache(
 	cache(async () => {

@@ -315,12 +315,18 @@ body {
 	font-size: 1rem;
 }
 
+.text-danger {
+	color: hsl(0, 100%, 50%);
+	font-size: 1.2rem;
+	margin: 10px 0;
+}
+
 .skeleton {
 	background: hsl(200, 20%, 90%);
 	border-radius: 0.5rem;
 	height: 1em;
 	width: 100%;
-  margin: 0.5em 0;
+	margin: 0.5em 0;
 	animation: skeleton 1s infinite alternate ease-in-out;
 }
 

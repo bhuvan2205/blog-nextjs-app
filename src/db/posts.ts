@@ -2,7 +2,7 @@ import { Prisma } from "@prisma/client";
 import prisma from "./db";
 import { unstable_cache } from "next/cache";
 import { cache } from "react";
-import { wait } from "@/utils/seed";
+import { wait } from "@/utils/helper";
 
 export const getPosts = unstable_cache(
 	cache(

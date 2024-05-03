@@ -2,9 +2,9 @@ import { getPosts } from "@/db/posts";
 import { PostCard, SkeletonPostCard } from "@/components/PostCard";
 import { SkeletonList } from "@/components/Skeleton";
 import { Suspense } from "react";
-import { SearchForm } from "./searchForm";
+import { SearchForm } from "@/components/searchForm";
 import Link from "next/link";
-import { UserSelectOptions } from "./userSelectOptions";
+import { UserSelectOptions } from "@/components/userSelectOptions";
 
 type PageProps = {
 	searchParams: { query?: string; userId?: string };

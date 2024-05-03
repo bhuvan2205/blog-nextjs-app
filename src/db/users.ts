@@ -1,6 +1,7 @@
 import { unstable_cache } from "next/cache";
 import prisma from "./db";
 import { cache } from "react";
+import { wait } from "@/utils/helper";
 
 export const getUsers = unstable_cache(
 	cache(async () => {
@@ -19,8 +20,3 @@ export const getUser = unstable_cache(
 	["user", "userId"]
 );
 
-function wait(duration: number) {
-	return new Promise((resolve) => {
-		setTimeout(resolve, duration);
-	});
-}
